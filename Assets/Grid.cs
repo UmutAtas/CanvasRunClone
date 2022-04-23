@@ -16,8 +16,8 @@ public class Grid : Singleton<Grid>
     public int currentZ;
     private int newSpawnx = 0;
     private int newSpawnz = 0;
-    private int offsetX = 1;
-    private int offsetZ = 1;
+    private float offsetX = 0.5f;
+    private float offsetZ = 0.5f;
     [SerializeField] private int zSpawnOffset;
 
     private void Awake()
@@ -34,7 +34,7 @@ public class Grid : Singleton<Grid>
 
     private void FirstGrid()
     {
-        var offset = 1f;
+        var offset = 0.5f;
         var gridX = startX / 2;
         for (int i = 0; i < startX; i++)
         {
@@ -85,7 +85,7 @@ public class Grid : Singleton<Grid>
                     break;
                 case 1 :
                     newSpawnx = 0;
-                    offsetX += 1;
+                    offsetX += 0.5f;
                     break;
             }
         }
@@ -98,7 +98,7 @@ public class Grid : Singleton<Grid>
         newSpawnz = currentZ - number;
         for (int i = 0; i < currentX; i++)
         {
-            offsetZ = 1;
+            offsetZ = 0.5f;
             for (int j = currentZ; j < currentZ + plusZ; j++)
             {
                 Vector3 gridPos = gridList[i, newSpawnz].transform.position + new Vector3(0f,0f,-zSpawnOffset);
@@ -109,7 +109,7 @@ public class Grid : Singleton<Grid>
                 newSpawnz += 1;
                 var pos = transformToFollow.position;
                 gridList[i, j].transform.DOLocalMove(new Vector3(pos.x,pos.y,pos.z-offsetZ) - transform.position, 1f);
-                offsetZ += 1;
+                offsetZ += 0.5f;
             }
             newSpawnz = currentZ - number;
         }

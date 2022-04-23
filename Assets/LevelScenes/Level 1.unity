@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startX: 2
-  startZ: 10
+  startZ: 6
   remainder: 0
   plusX: 0
   plusZ: 0
