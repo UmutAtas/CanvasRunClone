@@ -13,11 +13,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../InternProject1/Assets/movement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../InternProject1/Assets/cameramove.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GateHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/LengthGateHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GridMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GridHandle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../soap-it-up/Assets/2-Scripts/SoapManagement/ParticleCollision.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../soap-it-up/Assets/2-Scripts/PlayerManagement/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/cameramove.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,13 +31,16 @@
       <option value="$PROJECT_DIR$/Assets/cameramove.cs" />
       <option value="$PROJECT_DIR$/../soap-it-up/Assets/2-Scripts/SoapManagement/CubeSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GridMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GateHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/LevelScenes/Player/Scripts/PlayerMovementandRotation.cs" />
       <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/LevelScenes/Player/Scripts/GridHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/GetGrid.cs" />
-      <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/SwerveInputSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/GridHandle.cs" />
+      <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/SwerveInputSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/WidthGateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/GetGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Grid.cs" />
+      <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/LengthGateHandler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="27sa825wXpRs1bWlmlMmKSfnpI8" />
@@ -69,10 +70,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4740">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4740" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -98,7 +99,8 @@
       <workItem from="1650303914857" duration="172000" />
       <workItem from="1650466048859" duration="8257000" />
       <workItem from="1650528702067" duration="16746000" />
-      <workItem from="1650631554943" duration="13312000" />
+      <workItem from="1650631554943" duration="14192000" />
+      <workItem from="1650706597501" duration="13113000" />
     </task>
     <servers />
   </component>

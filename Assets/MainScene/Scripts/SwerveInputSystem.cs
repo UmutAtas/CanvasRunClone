@@ -52,17 +52,17 @@ public class SwerveInputSystem : MonoBehaviour
 
     void Move()
     {
-        //if(XBasedCM < 100 || XBasedCM > -100)
-        //    transform.Translate(XBasedCM * swerveSensitivity, 0, 0); //VECTOR3 LERP,scriptleri değiştir.
-        var gridX = GridHandle.Instance.x;
-        for (int i = 0; i < gridX; i++)
-        {
-            if (XBasedCM < 100 || XBasedCM > -100)
-            {
-                GridHandle.Instance.gridList[i, 0].transform.Translate(XBasedCM*swerveSensitivity,0,0);
-                print(XBasedCM);
-            }
-        }
+        if(XBasedCM < 100 || XBasedCM > -100)
+            transform.Translate(XBasedCM * swerveSensitivity, 0, 0); //VECTOR3 LERP,scriptleri değiştir.
+       //var gridX = GridHandle.Instance.x;
+       //for (int i = 0; i < gridX; i++)
+       //{
+       //    if (XBasedCM < 100 || XBasedCM > -100)
+       //    {
+       //        GridHandle.Instance.gridList[i, 0].transform.Translate(XBasedCM*swerveSensitivity,0,0);
+       //        print(XBasedCM);
+       //    }
+       //}
     } 
 
     void OnDisable()

@@ -11,15 +11,27 @@ public class GetGrid : MonoBehaviour
         if (other.gameObject.layer == 8)
         {
             other.gameObject.layer = 9;
-            if (other.TryGetComponent(out GateHandler temp))
+            if (other.TryGetComponent(out WidthGateHandler width))
             {
-                if (temp.textNumber < 0)
+                if (width.textNumber < 0)
                 {
-                    GridHandle.Instance.GetNewGridXNegative(temp.textNumber);
+                    GridHandle.Instance.GetNewGridXNegative(width.textNumber);
                 }
-                else if (temp.textNumber > 0)
+                else if (width.textNumber > 0)
                 {
-                    GridHandle.Instance.GetNewGridXPositive(temp.textNumber);
+                    Grid.Instance.GetNewWidth(width.multiplier);
+                }
+            }
+
+            if (other.TryGetComponent(out LengthGateHandler length))
+            {
+                if (length.textNumber < 0)
+                {
+                    
+                }
+                else if (length.textNumber > 0)
+                {
+                    Grid.Instance.GetNewLength(length.multiplier);
                 }
             }
         }
