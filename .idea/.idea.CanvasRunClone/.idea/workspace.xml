@@ -12,8 +12,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../InternProject1/Assets/movement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RampCollision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../InternProject1/Assets/cameramove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../InternProject1/Assets/LevelScenes/SkeeBall/Ground/Scripts/LevelEndTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DumpRebounce.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/LengthGateHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DumpSection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GridMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GridHandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../soap-it-up/Assets/2-Scripts/SoapManagement/ParticleCollision.cs" root0="SKIP_HIGHLIGHTING" />
@@ -27,20 +31,27 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/CameraFollow.cs" />
-      <option value="$PROJECT_DIR$/Assets/cameramove.cs" />
       <option value="$PROJECT_DIR$/../soap-it-up/Assets/2-Scripts/SoapManagement/CubeSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GridMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/LevelScenes/Player/Scripts/PlayerMovementandRotation.cs" />
       <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/LevelScenes/Player/Scripts/GridHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/GridHandle.cs" />
       <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/CameraFollow.cs" />
+      <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/SwerveInputSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/EventManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/LevelScenes/Player/Scripts/PlayerMovementandRotation.cs" />
       <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/WidthGateHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/GetGrid.cs" />
       <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/LengthGateHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/RampCollision.cs" />
+      <option value="$PROJECT_DIR$/Assets/BeforeRamp.cs" />
+      <option value="$PROJECT_DIR$/Assets/MainScene/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/LevelScenes/Objects/Scripts/GridMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Grid.cs" />
+      <option value="$PROJECT_DIR$/Assets/cameramove.cs" />
+      <option value="$PROJECT_DIR$/Assets/DumpRebounce.cs" />
+      <option value="$PROJECT_DIR$/Assets/DumpSection.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="27sa825wXpRs1bWlmlMmKSfnpI8" />
@@ -102,6 +113,15 @@
       <workItem from="1650631554943" duration="14192000" />
       <workItem from="1650706597501" duration="13516000" />
       <workItem from="1650733456415" duration="164000" />
+      <workItem from="1650733828720" duration="1302000" />
+      <workItem from="1650830646336" duration="1424000" />
+      <workItem from="1650874991250" duration="10180000" />
+      <workItem from="1650915650394" duration="916000" />
+      <workItem from="1650968611217" duration="5837000" />
+      <workItem from="1650994898289" duration="2227000" />
+      <workItem from="1651058496655" duration="9184000" />
+      <workItem from="1651153422882" duration="10003000" />
+      <workItem from="1651506450076" duration="2448000" />
     </task>
     <servers />
   </component>

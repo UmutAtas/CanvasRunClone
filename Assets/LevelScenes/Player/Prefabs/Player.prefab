@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 4857123062899146025}
   - component: {fileID: 4374090327520052379}
   - component: {fileID: 4693233100884445765}
-  - component: {fileID: 4985639838330608217}
-  - component: {fileID: 1784303893069470807}
+  - component: {fileID: -7831310769913480593}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -110,30 +109,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e35f5510e79f743ab90d9bb18aa085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4985639838330608217
-MonoBehaviour:
+--- !u!54 &-7831310769913480593
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765370054844915647}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d94a1848d4f6c240a00982ade9b8ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XPosLimit: 3.5
-  swerveSensitivity: 0.5
-  inEditor: 1
---- !u!114 &1784303893069470807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765370054844915647}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94c45da6654328b43b738b21eeac47ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Mass: 0.2
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0

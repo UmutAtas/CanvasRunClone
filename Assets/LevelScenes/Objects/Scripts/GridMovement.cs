@@ -7,6 +7,9 @@ public class GridMovement : MonoBehaviour
     
     void Update()
     {
-        transform.Translate(0f,0f,5f*Time.deltaTime);
+        if (GameManager.Instance.dumpSection == false)
+        {
+            transform.position += Vector3.forward * (10 * Time.deltaTime);
+        }
     }
 }

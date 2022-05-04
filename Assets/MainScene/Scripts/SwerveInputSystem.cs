@@ -13,12 +13,12 @@ public class SwerveInputSystem : MonoBehaviour
 
     void Start()
     {
-        EventManager.Instance.OnMoved += InputDetection;
-        EventManager.Instance.OnMoved += SwerveMovement;
-        
-        #if UNITY_EDITOR
-        EventManager.Instance.OnMoved += InputEditor;
-        #endif
+       EventManager.Instance.OnMoved += InputDetection;
+       EventManager.Instance.OnMoved += SwerveMovement;
+       
+       #if UNITY_EDITOR
+       EventManager.Instance.OnMoved += InputEditor;
+       #endif
     }
 
     void InputDetection()
@@ -52,27 +52,31 @@ public class SwerveInputSystem : MonoBehaviour
 
     void Move()
     {
-        if(XBasedCM < 100 || XBasedCM > -100)
-            transform.Translate(XBasedCM * swerveSensitivity, 0, 0); //VECTOR3 LERP,scriptleri değiştir.
-       //var gridX = GridHandle.Instance.x;
-       //for (int i = 0; i < gridX; i++)
-       //{
-       //    if (XBasedCM < 100 || XBasedCM > -100)
-       //    {
-       //        GridHandle.Instance.gridList[i, 0].transform.Translate(XBasedCM*swerveSensitivity,0,0);
-       //        print(XBasedCM);
-       //    }
-       //}
+        if (XBasedCM < 100 || XBasedCM > -100)
+        {
+            //transform.Translate(XBasedCM * swerveSensitivity, 0, 0);
+            transform.position += Vector3.right * (XBasedCM * swerveSensitivity); //VECTOR3 LERP,scriptleri değiştir.
+        }
+            
+            //var gridX = GridHandle.Instance.x;
+        //for (int i = 0; i < gridX; i++)
+        //{
+        //    if (XBasedCM < 100 || XBasedCM > -100)
+        //    {
+        //        GridHandle.Instance.gridList[i, 0].transform.Translate(XBasedCM*swerveSensitivity,0,0);
+        //        print(XBasedCM);
+        //    }
+        //}
     } 
 
-    void OnDisable()
+    void OnDestroy()
     {
-        EventManager.Instance.OnMoved -= InputDetection;
-        EventManager.Instance.OnMoved -= SwerveMovement;
-        
-        #if UNITY_EDITOR
-        EventManager.Instance.OnMoved -= InputEditor;
-        #endif
+       EventManager.Instance.OnMoved -= InputDetection;
+       EventManager.Instance.OnMoved -= SwerveMovement;
+       
+       #if UNITY_EDITOR
+       EventManager.Instance.OnMoved -= InputEditor;
+       #endif
     }
     
     void InputEditor()

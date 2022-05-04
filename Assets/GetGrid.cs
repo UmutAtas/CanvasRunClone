@@ -15,7 +15,7 @@ public class GetGrid : MonoBehaviour
             {
                 if (width.textNumber < 0)
                 {
-                    GridHandle.Instance.GetNewGridXNegative(width.textNumber);
+                    Grid.Instance.GetNewWidth(width.multiplier);
                 }
                 else if (width.textNumber > 0)
                 {
@@ -27,7 +27,7 @@ public class GetGrid : MonoBehaviour
             {
                 if (length.textNumber < 0)
                 {
-                    
+                    Grid.Instance.GetNewLength(length.multiplier);
                 }
                 else if (length.textNumber > 0)
                 {

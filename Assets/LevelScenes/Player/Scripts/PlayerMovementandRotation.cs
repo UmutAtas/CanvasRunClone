@@ -5,12 +5,6 @@ using UnityEngine;
 public class PlayerMovementandRotation : MonoBehaviour
 {
     private SwerveInputSystem _swerveInputSystem;
-
-    private void Awake()
-    {
-        _swerveInputSystem = GetComponent<SwerveInputSystem>();
-    }
-
     void Update()
     {
         Rotate();   
@@ -18,7 +12,16 @@ public class PlayerMovementandRotation : MonoBehaviour
 
     private void Rotate()
     {
-        if (_swerveInputSystem.XBasedCM != 0 && ((transform.eulerAngles.y < 60) || transform.eulerAngles.y > 300))
+        //for (int i = 0; i < Grid.Instance.currentX; i++)
+        //{
+        //    var orta = Grid.Instance.gridList[Grid.Instance.currentX / 2, 0];
+        //    Grid.Instance.gridList[i, 0].transform
+        //}
+        if (_swerveInputSystem == null)
+        {
+            _swerveInputSystem = GetComponentInParent<SwerveInputSystem>();
+        }
+        if (_swerveInputSystem.XBasedCM != 0 && ((transform.eulerAngles.y < 15) || transform.eulerAngles.y > 345))
         {
             if (Mathf.Abs(transform.position.x) > 3.5f)
             {

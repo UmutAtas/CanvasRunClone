@@ -1,5 +1,7 @@
 using System;
-public class EventManager : Singleton<EventManager>
+using UnityEngine;
+
+public class EventManager : SingletonPersistent<EventManager>
 {
     public event Action OnMoved;
     public event Action<int> OnCoin;
@@ -10,5 +12,9 @@ public class EventManager : Singleton<EventManager>
             OnMoved?.Invoke();
             OnCoin?.Invoke(0);
         }
+    }
+    private void OnDestroy()
+    {
+        
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,7 @@ public class GameManager : Singleton<GameManager>
     public float CountDown = 2f;
     int asyncSceneIndex = 1;
     public bool taptic = true;
+    [NonSerialized] public bool dumpSection = false;
     #region GameState
     public enum GAMESTATE
     {
